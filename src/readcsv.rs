@@ -108,3 +108,9 @@ pub fn run() {
 //         }
 //     }
 // }
+
+// let mut reader = Reader::from_file(path).unwrap().has_headers(false);
+//     for row in reader.decode() {
+//         let row: (String, String, usize) = row.unwrap();
+//         println!("{:?}", row);
+//     }
