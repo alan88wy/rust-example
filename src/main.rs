@@ -10,7 +10,7 @@
 // mod loops;
 // mod pointers;
 // mod print;
-mod readcsv;
+// mod readcsv;
 // mod string;
 // mod structs;
 // mod tuple;
@@ -18,7 +18,7 @@ mod readcsv;
 // mod vectors;
 // mod writecsv;
 
-// mod sdl;
+mod sdl;
 
 fn main() {
     // print::run();
@@ -35,7 +35,7 @@ fn main() {
     // enums::run();
     // cli::run();
     // formatting::run();
-    readcsv::run();
+    // readcsv::run();
     // writecsv::run();
-    // sdl::run();
+    sdl::run();
 }
