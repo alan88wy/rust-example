@@ -81,4 +81,9 @@ pub fn run() {
         // for fmt::Display.
         println!("{:?}", *color);
     }
+
+    // Print formatting
+
+    println!("Number is : {:8.3}", 10.0 / 3.0); // Will print "   3.333"
+    println!("Number is : {:08.3}", 10.0 / 3.0); // Will print 0003.333
 }
