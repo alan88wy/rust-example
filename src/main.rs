@@ -5,7 +5,7 @@
 // mod cli;
 // mod conditional;
 // mod enums;
-mod formatting;
+// mod formatting;
 // mod functions;
 // mod loops;
 // mod pointers;
@@ -17,8 +17,9 @@ mod formatting;
 // mod var;
 // mod vectors;
 // mod writecsv;
-
+// mod bitwise;
 // mod sdl;
+mod boolean;
 
 fn main() {
     // print::run();
@@ -34,8 +35,12 @@ fn main() {
     // structs::run();
     // enums::run();
     // cli::run();
-    formatting::run();
+    // formatting::run();
     // readcsv::run();
     // writecsv::run();
     // sdl::run();
+
+    // bitwise::run();
+
+    boolean::run();
 }
