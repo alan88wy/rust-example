@@ -13,19 +13,21 @@
 // mod readcsv;
 // mod string;
 // mod structs;
-// mod tuple;
+mod tuple;
 // mod var;
 // mod vectors;
 // mod writecsv;
 // mod bitwise;
 // mod sdl;
-mod boolean;
+// mod boolean;
+// mod comparison;
+// mod char;
 
 fn main() {
     // print::run();
     // var::run();
     // string::run();
-    // tuple::run();
+    tuple::run();
     // arrays::run();
     // vectors::run();
     // conditional::run();
@@ -42,5 +44,9 @@ fn main() {
 
     // bitwise::run();
 
-    boolean::run();
+    // boolean::run();
+
+    // comparison::run();
+
+    // char::run();
 }

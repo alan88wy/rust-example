@@ -8,6 +8,6 @@ pub fn run() {
     println!("a OR b is {} ", a | b);
     println!("a XOR b is {} ", a ^ b);
 
-    let c = (a ^ b) | (a & b);
-    println!("(a ^ b) | (a & b) = {}", c);
+    let c = (a ^ b) || (a & b); // More efficient than doing (a ^ b) | (a & b)
+    println!("(a ^ b) || (a & b) = {}", c);
 }
