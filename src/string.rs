@@ -37,9 +37,8 @@ pub fn run() {
     s.push('b');
 
     println!("{}", s);
-    
+
     // Assertion testing
 
-   assert_eq!(2,s.len());
-
+    assert_eq!(2, s.len());
 }

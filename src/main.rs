@@ -7,14 +7,14 @@
 // mod enums;
 // mod formatting;
 // mod functions;
-mod loops;
+// mod loops;
 // mod pointers;
 // mod print;
 // mod readcsv;
 // mod string;
 // mod structs;
 // mod tuple;
-// mod var;
+mod var;
 // mod vectors;
 // mod writecsv;
 // mod bitwise;
@@ -25,13 +25,13 @@ mod loops;
 
 fn main() {
     // print::run();
-    // var::run();
+    var::run();
     // string::run();
     // tuple::run();
     // arrays::run();
     // vectors::run();
     // conditional::run();
-    loops::run();
+    // loops::run();
     // functions::run();
     // pointers::run();
     // structs::run();
