@@ -3,11 +3,11 @@
 // #[warn(non_snake_case)]
 // mod arrays;
 // mod cli;
-mod conditional;
+// mod conditional;
 // mod enums;
 // mod formatting;
 // mod functions;
-// mod loops;
+mod loops;
 // mod pointers;
 // mod print;
 // mod readcsv;
@@ -30,8 +30,8 @@ fn main() {
     // tuple::run();
     // arrays::run();
     // vectors::run();
-    conditional::run();
-    // loops::run();
+    // conditional::run();
+    loops::run();
     // functions::run();
     // pointers::run();
     // structs::run();
