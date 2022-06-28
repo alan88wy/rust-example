@@ -3,7 +3,7 @@
 // #[warn(non_snake_case)]
 // mod arrays;
 // mod cli;
-// mod conditional;
+mod conditional;
 // mod enums;
 // mod formatting;
 // mod functions;
@@ -13,7 +13,7 @@
 // mod readcsv;
 // mod string;
 // mod structs;
-mod tuple;
+// mod tuple;
 // mod var;
 // mod vectors;
 // mod writecsv;
@@ -27,10 +27,10 @@ fn main() {
     // print::run();
     // var::run();
     // string::run();
-    tuple::run();
+    // tuple::run();
     // arrays::run();
     // vectors::run();
-    // conditional::run();
+    conditional::run();
     // loops::run();
     // functions::run();
     // pointers::run();
