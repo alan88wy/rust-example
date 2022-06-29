@@ -6,7 +6,7 @@
 // mod conditional;
 // mod enums;
 // mod formatting;
-mod functions;
+// mod functions;
 // mod loops;
 // mod pointers;
 // mod print;
@@ -22,6 +22,7 @@ mod functions;
 // mod boolean;
 // mod comparison;
 // mod char;
+mod slices;
 
 fn main() {
     // print::run();
@@ -32,7 +33,7 @@ fn main() {
     // vectors::run();
     // conditional::run();
     // loops::run();
-    functions::run();
+    // functions::run();
     // pointers::run();
     // structs::run();
     // enums::run();
@@ -49,4 +50,6 @@ fn main() {
     // comparison::run();
 
     // char::run();
+
+    slices::run();
 }
