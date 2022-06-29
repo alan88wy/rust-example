@@ -64,12 +64,18 @@ pub fn run() {
 
     let str = String::from("Hello");
 
-    print_string(str);
+    pass_by_value(str);
 
     // println!("Value of str is {}", str); // this will failed unless we do print_string(str.clone())
     //                                          or get function to return the value back to the variable
     //                                          eg let str = print_string(str). print_string will be define as
     //                                          fn print_string(s: String) -> String { return (s);}
+
+    let mut str2 = String::from("Hello");
+
+    pass_by_reference(&mut str2);
+
+    println!("Final value of str2 is {}", str2);
 }
 
 fn increment(mut i: i32) {
@@ -78,8 +84,15 @@ fn increment(mut i: i32) {
     println!("Value of i in the function is  {}", i);
 }
 
-fn print_string(s: String) {
+fn pass_by_value(s: String) {
     println!("Value of s is {}", s);
+}
+
+// pass by reference ? or Borrowing Reference
+
+fn pass_by_reference(s: &mut String) {
+    s.push_str(" World");
+    println!("Value of borrowed str is {}", s);
 }
 // Scalar Types
 
