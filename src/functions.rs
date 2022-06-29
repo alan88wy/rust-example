@@ -16,6 +16,21 @@ pub fn run() {
     let (x, sq) = square(13);
 
     println!("Square of {} is {}", x, sq);
+
+    let str = String::from("Hello");
+
+    pass_by_value(str);
+
+    // println!("Value of str is {}", str); // this will failed unless we do print_string(str.clone())
+    //                                          or get function to return the value back to the variable
+    //                                          eg let str = print_string(str). print_string will be define as
+    //                                          fn print_string(s: String) -> String { return (s);}
+
+    let mut str2 = String::from("Hello");
+
+    pass_by_reference(&mut str2);
+
+    println!("Final value of str2 is {}", str2);
 }
 
 fn greeting(greet: &str, name: &str) {
@@ -28,4 +43,15 @@ fn add(m: i32, n: i32) -> i32 {
 
 fn square(x: i32) -> (i32, i32) {
     return (x, x * x);
+}
+
+fn pass_by_value(s: String) {
+    println!("Value of s is {}", s);
+}
+
+// pass by reference ? or Borrowing Reference
+
+fn pass_by_reference(s: &mut String) {
+    s.push_str(" World");
+    println!("Value of borrowed str is {}", s);
 }
