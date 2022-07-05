@@ -10,6 +10,7 @@ struct Person {
 }
 
 impl Person {
+    // Associated functions --------------------------------
     fn new(first: &str, last: &str) -> Person {
         Person {
             first_name: first.to_string(),
