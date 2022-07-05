@@ -47,10 +47,18 @@ pub fn run() {
     println!("c Color : {} {} {}", c.red, c.green, c.blue);
 
     // Struct Update - anything not explictly set, like green and blue, will be set using the green and blue from c.
+    // remember k will be initialized with the value of c. If you change the value in c after initialization,
+    // it will not have new values. Values is assign during initialization.
 
     let k = Color { red: 0, ..c };
 
     println!("k Color : {} {} {}", k.red, k.green, k.blue);
+
+    // can also do this. must use ..c if using all the fields
+
+    let l = Color { ..c };
+
+    println!("l Color : {} {} {}", l.red, l.green, l.blue);
 
     let d = Color {
         red: 255,
@@ -58,7 +66,7 @@ pub fn run() {
         blue: 0,
     };
 
-    println!("c Color : {} {} {}", d.red, d.green, d.blue);
+    println!("d Color : {} {} {}", d.red, d.green, d.blue);
 
     let mut p = Person::new("James", "Bond");
 
