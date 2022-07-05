@@ -1,7 +1,7 @@
 struct Color {
     red: u8,
     green: u8,
-    blue: u8
+    blue: u8,
 }
 
 struct Person {
@@ -11,9 +11,9 @@ struct Person {
 
 impl Person {
     fn new(first: &str, last: &str) -> Person {
-        Person { 
-            first_name: first.to_string(), 
-            last_name: last.to_string() 
+        Person {
+            first_name: first.to_string(),
+            last_name: last.to_string(),
         }
     }
 
@@ -26,7 +26,7 @@ impl Person {
 
     fn set_last_name(&mut self, last: &str) {
         self.last_name = last.to_string();
-    } 
+    }
 
     // Name to tuple
 
@@ -39,18 +39,28 @@ pub fn run() {
     let mut c = Color {
         red: 255,
         green: 0,
-        blue: 0
+        blue: 0,
     };
 
     c.red = 255;
 
-    println!("Color : {} {} {}", c.red, c.green, c.blue);
+    println!("c Color : {} {} {}", c.red, c.green, c.blue);
 
-    let d = Color{red:255, green:255, blue:0};
+    // Struct Update - anything not explictly set, like green and blue, will be set using the green and blue from c.
 
-    println!("Color : {} {} {}", d.red, d.green, d.blue);
+    let k = Color { red: 0, ..c };
 
-    let mut p = Person::new("James","Bond");
+    println!("k Color : {} {} {}", k.red, k.green, k.blue);
+
+    let d = Color {
+        red: 255,
+        green: 255,
+        blue: 0,
+    };
+
+    println!("c Color : {} {} {}", d.red, d.green, d.blue);
+
+    let mut p = Person::new("James", "Bond");
 
     println!("My Name is {}!", p.get_full_name());
 
@@ -59,5 +69,4 @@ pub fn run() {
     println!("My New Name is {}!", p.get_full_name());
 
     println!("My Name in tuple is {:?}!", p.to_tuple());
-
 }

@@ -12,7 +12,7 @@
 // mod print;
 // mod readcsv;
 // mod string;
-// mod structs;
+mod structs;
 // mod tuple;
 // mod var;
 // mod vectors;
@@ -22,7 +22,7 @@
 // mod boolean;
 // mod comparison;
 // mod char;
-mod slices;
+// mod slices;
 
 fn main() {
     // print::run();
@@ -35,7 +35,7 @@ fn main() {
     // loops::run();
     // functions::run();
     // pointers::run();
-    // structs::run();
+    structs::run();
     // enums::run();
     // cli::run();
     // formatting::run();
@@ -51,5 +51,5 @@ fn main() {
 
     // char::run();
 
-    slices::run();
+    // slices::run();
 }
